@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dock Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #34495E;
+            margin: 0;
+        }
+
+        .dock {
+            display: flex;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .dock img {
+            width: 60px;
+            margin: 0 10px;
+            transition: transform 0.3s ease, margin 0.3s ease;
+            border-radius: 15px;
+        }
+
+        .dock img:hover {
+            transform: scale(2);
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dock">
+        <img src="https://via.placeholder.com/60x60.png?text=Finder" alt="Finder">
+        <img src="https://via.placeholder.com/60x60.png?text=Mail" alt="Mail">
+        <img src="https://via.placeholder.com/60x60.png?text=Photos" alt="Photos">
+        <img src="https://via.placeholder.com/60x60.png?text=App+Store" alt="App Store">
+        <img src="https://via.placeholder.com/60x60.png?text=Safari" alt="Safari">
+        <img src="https://via.placeholder.com/60x60.png?text=Settings" alt="Settings">
+    </div>
+
+</body>
+</html>
